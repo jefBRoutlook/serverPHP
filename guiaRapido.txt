@@ -1,0 +1,41 @@
+-----COMANDOS------
+-------------------
+Iniciar o servidor
+php servidor.php on
+Saída esperada: “Servidor está rodando!” (ou mensagem de OK)
+
+----------------
+Parar o servidor
+php servidor.php off
+Saída esperada: “Servidor foi finalizado!”
+
+------------
+Ver o status
+php servidor.php status
+Saída esperada: “ON” ou “OFF” via mensagens definidas
+
+----------------
+Ver configuração
+php servidor.php config
+Saída: lista de atributos/valores e a mensagem ABOUT
+
+----------------------
+Ajustar atributo/valor
+php servidor.php set <atributo> <novo valor>
+Exemplo: php servidor.php set DOCROOT /var/www/meu_site
+Saída: “Alteração feito com sucesso” ou mensagem de erro de sintaxe de entrada
+
+------------------
+Reiniciar servidor
+php servidor.php restart
+Processo: para o servidor, espera, inicia novamente, mostra mensagens de status
+
+-----------------------------
+Mostrar configuração completa
+php servidor.php config
+
+OBSERVAÇÕES RÁPIDAS
+
+- O servidor embutido é para desenvolvimento; não use em produção.
+- O script depende de Composer e do autoload (vendor/autoload.php).
+- Certifique-se de que a classe Serve e seus métodos (on, off, status, set, etc.) estão disponíveis.

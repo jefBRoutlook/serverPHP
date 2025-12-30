@@ -1,0 +1,15 @@
+{
+"name": "jefBRoutlook/servidor-php",
+"description": "Automacao php server para linux.",
+"type": "serve",
+"license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+    }
+
+}
+
+
+
