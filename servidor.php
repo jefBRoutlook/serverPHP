@@ -93,6 +93,7 @@ Observações:
           break;
       case 'config':
           show_config($serve->cfg);    
+          show_message($serve->status() ? "ON" : "OFF");
           break;    
       default:
           show_message("ABOUT");
