@@ -11,7 +11,7 @@ Script php gerenciando servidor embutido php.
 
 ## COMPOSER
 
-- após git clone, execute **composer update**
+- após git clone, execute **composer init**
 
 ## GIT
 
